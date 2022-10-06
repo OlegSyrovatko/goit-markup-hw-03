@@ -44,6 +44,13 @@ body{
 .menu-nav a {
   color: var(--color-primary);
 }
+.menu-nav {
+  display: block;
+  display: flex;
+  align-items: baseline;
+  color: var(--color-primary);
+}
+
 .footer a {
   text-decoration: none;
 }
@@ -53,9 +60,9 @@ body{
 }
 
 .nav-link{
+  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  display: block;
 }
 .nav-li:not(:last-child){
   margin-right: 50px;
@@ -65,6 +72,7 @@ body{
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  
 
 }
 
@@ -76,17 +84,17 @@ body{
   font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  padding: 0;
-
 
   display: inline-block;
   min-width: 216px;
   height: 50px;
   margin-top: 30px; 
-  margin-bottom: 210px; 
+  margin-bottom: 200px; 
   margin-left: auto;
   margin-right: auto;
-  padding: 10px 32px 10px;
+  padding: 0px 32px 0px;
+
+
 
   color: #FFFFFF;
   background-color: #2196F3;
@@ -98,24 +106,25 @@ body{
 .hero-container{
   display: flex;
   flex-direction: column;
-  height: 600px;
+
 }
 .menu-container{
   display: flex;
   height: 80px;
+  align-items: baseline;
 }
-.menu-nav{
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  display: flex;
-}
+
 
 .site-nav {
   display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 .tel-mail{
   display: flex;
+  margin-left: auto;
 }
 
 .telmail-item{
@@ -128,9 +137,11 @@ body{
   margin-left: 50px;
 }
 
+
+
 .advantages-list{
   display: flex;
-  margin-top: 94px;
+  flex-wrap: wrap;
 }
 .advantages-item{
   width: 270px;
@@ -184,7 +195,7 @@ body{
   width: 696px;
   height: 120px;
   margin-top: 200px;
-  
+
   
     margin-left: auto;
     margin-right: auto;
@@ -202,7 +213,14 @@ body{
   color: #2196F3; 
  }
 
+
+
+
 .logo-title{
+  margin-right: 93px;
+  width: 145px;
+  padding: 0;
+
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -213,13 +231,6 @@ body{
 }
 
 
-
-.site-nav{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-}
 
 
 .mailto-top, .tel-top{
@@ -248,9 +259,22 @@ body{
 
 
 
+.about-ul{
+  display: flex;
+  margin-top: 94px;
+}
 
+.about-list{
+  margin-top: 50px;
+}
+.about-list:not(:last-child){
+  margin-right: 30px;
+}
 
-
+.about-container{
+  padding-bottom: 94px;
+  background-color: #fff;
+}
 
 .ourworks-title{
   font-weight: 700;
@@ -261,11 +285,15 @@ body{
 
 
 .about-head{
+  
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.36;
   letter-spacing: 0.03em;
+
 }
+
 
 
 
@@ -289,9 +317,6 @@ body{
 }
 
 
-.order-button{
-  background-color: #2196F3;
-}
 
 .order-button:hover, .order-button:focus{
   background-color: #188CE8;
@@ -315,6 +340,12 @@ body{
 .logo-link, .studio {
   color: #2196F3; 
  }
+
+.advantages-container{
+  background-color: #fff;
+  padding-top: 94px;
+  padding-bottom: 118px;
+}
 
  .advantages-head{
   font-weight: 700;
@@ -340,24 +371,40 @@ body{
 
 
 .ourteam-head{
+  margin-top: 94px;
+  margin-bottom: 50px;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.36;
   letter-spacing: 0.03em; 
 }
 
+
+.ourteam-ul{
+  display: flex;
+}
+
 .ourteam-block  {
- 
+  margin-bottom: 94px;
   background-color: #FFF;
+}
+.ourteam-block:not(:last-child){
+  margin-right: 30px;
 }
 
 .ourteam-title{
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 
 .ourteam-description{
+  margin-bottom: 30px;
+  text-align: center;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -368,6 +415,8 @@ body{
 
 
 .portfolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: #FFF;
 }
 
@@ -387,6 +436,38 @@ body{
 }
 
 
+
+.portfolio-list{
+  display: flex;
+  justify-content:center;
+  margin-bottom: 20px;
+}
+
+.our-works{
+  display: flex;
+  flex-wrap: wrap;
+}
+.works-li{
+  margin: 30px 15px 15px 30px;
+}
+
+.works-li:nth-of-type(3n+1) {
+  margin-left: 0;
+}
+.works-li:nth-of-type(3n) {
+  margin-right: 0;
+}
+.works-li:nth-last-of-type(-n+3) {
+  margin-bottom: 0;
+}
+
+.portfolio-button{
+  margin-left: 8px;
+}
+
+
+
+
 .address li  {
   display: block;
   font-style: normal;
@@ -402,6 +483,23 @@ color: rgba(255, 255, 255, 0.6);
 
 }
 
+.footer-logo{
+  display: inline-block;
+  margin-top: 60px;
+}
+.address-map{
+  display: inline-block;
+  margin-top: 20px;
+}
+.eml{
+  display: inline-block;
+  margin-top: 8px;
+}
+.tel{
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: 60px;
+}
 .address-map, .footer-logo{
   color: #FFFFFF;
 } 
