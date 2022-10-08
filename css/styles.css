@@ -36,7 +36,7 @@ ul {
   margin: 0;
 }
 
-.img{
+img{
   display: block;
   max-width: 100%;
   height: auto;
@@ -84,11 +84,9 @@ ul {
 .order-button {
   display: block;
   min-width: 216px;
-  height: 50px;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 32px 10px;
-  
   font-family: inherit;
   font-style: normal; 
   cursor: pointer;
@@ -135,7 +133,6 @@ ul {
 
 .hero-title{
   width: 696px;
-  height: 120px;
   margin: 0 auto 20px;
   text-align: center;
 
@@ -170,7 +167,6 @@ ul {
 .menu-container{
   display: flex;
   align-items: center;
-  height: 80px;
 }
 
 
@@ -241,7 +237,6 @@ ul {
 
 .portfolio-default {
   display: inline-block;
-  height: 38px;
   padding: 6px 22px 6px;
 
   font-family: inherit;
@@ -261,7 +256,6 @@ ul {
 
 .portfolio-button {
   display: inline-block;
-  height: 38px;
   padding: 6px 22px 6px;
 
   font-family: inherit;
@@ -379,15 +373,6 @@ ul {
   background-color: #188CE8;
 }
 
-.order-text{
-  display: inline-block;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  padding: 0;
-  color: #FFFFFF;
-}
 
 
 .logo-link, .studio {
@@ -441,13 +426,13 @@ ul {
   margin-top: 50px;
   gap: 30px;
 }
-.works-li{
-  outline: #EEEEEE solid 1px;
-}
+
 
 .work-hp{
   display: block;
   padding: 20px 24px 24px 20px;
+  border: #EEEEEE solid 1px;
+  border-top: none;
 }
 
 .work-title{
